@@ -1,0 +1,10 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de Zone.Identifier de Windows
+*.Zone.Identifier
+
+# Editor
+.vscode/
+.idea/
