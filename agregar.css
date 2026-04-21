@@ -1,9 +1,0 @@
-body { font-family: Arial, sans-serif; background: #fafafa; display: flex; justify-content: center; padding: 60px 20px; }
-.card { background: white; padding: 32px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); width: 100%; max-width: 420px; }
-h1 { color: #333; margin-bottom: 24px; font-size: 22px; }
-label { display: block; margin-bottom: 6px; color: #555; font-size: 14px; }
-input[type="text"], input[type="number"] { width: 100%; padding: 9px 12px; margin-bottom: 14px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; }
-input[type="submit"] { background: #4CAF50; color: white; padding: 10px; border: none; border-radius: 6px; cursor: pointer; font-size: 15px; width: 100%; }
-input[type="submit"]:hover { background: #45a049; }
-a { display: inline-block; margin-top: 14px; color: #777; font-size: 13px; text-decoration: none; }
-a:hover { text-decoration: underline; }

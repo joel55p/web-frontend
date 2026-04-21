@@ -68,8 +68,8 @@ async function incrementarEpisodio(serie) {
 
 async function decrementarEpisodio(serie) {
     if (serie.current_episode <= 0) return; // no hacer nada si ya se esta en el episodio 0 (no negativo)
-    return updateSerie(serie.id, {
-        ...serie,
+    return updateSerie(serie.id, { //por esto es que se hace async por el updateSerie
+        ...serie, //... significa que se mantiene el resto de los campos de la serie igual, solo se actualiza current_episode
         current_episode: serie.current_episode - 1
     }); // actualiza la serie restando al episodio actual en 1
 }

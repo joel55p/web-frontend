@@ -4,7 +4,7 @@ function renderSeries(series) {
     const tbody    = document.getElementById('seriesBody'); // tbody donde se mostraran las series
     const emptyMsg = document.getElementById('emptyMsg'); // mensaje que se muestra cuando no hay series, se oculta si hay series. Se muestra si no hay series
 
-    tbody.innerHTML = '';
+    tbody.innerHTML = ''; // limpiar la tabla antes de renderizar las series, para evitar duplicados al recargar la grilla
 
     if (series.length === 0) { // si no hay series, mostrar mensaje y salir
         emptyMsg.style.display = 'block'; // mostrar mensaje de "No series added yet"
