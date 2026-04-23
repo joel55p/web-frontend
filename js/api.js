@@ -1,7 +1,7 @@
 // Va a representar toda comunicacion con el backend
 // Hay que Cambiar API_URL a URL de servidor de backend cuando se haga deploy
 
-const API_URL = 'http://localhost:8080'; // Cambiar a URL del backend cuando se haga deploy
+const API_URL = 'https://web-backend-production-1dfb.up.railway.app'; // URL del backend
 
 // GET /series listar con filtros opcionales
 async function getSeries(params = {}) { // { q, sort, order, page, limit }
