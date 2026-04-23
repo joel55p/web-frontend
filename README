@@ -15,7 +15,7 @@ https://web-frontend-chi-five.vercel.app
 
 
 -------Screenshot de Aplicacion funcionando----------------
-
+![alt text](img/image.png)
 
 -----------¿Cómo correr el proyecto localmente?-------------------
 Requisitos
@@ -26,8 +26,10 @@ Requisitos
 Pasos
 1. git clone https://github.com/joel55p/web-frontend.git
 2. cd web-frontend
-3. Luego abre el proyecto en VS Code y haz click derecho en index.html y sale Open with Live Server.
-4. El frontend corre en http://localhost:5500 y hace fetch al backend en localhost:8080.
+3. Luego abre el proyecto en VS Code y
+4. en js/api.js modifica API_URL a const API_URL = 'http://localhost:8080'; 
+5.  haz click derecho en index.html y sale Open with Live Server.
+6. El frontend corre en http://localhost:5500 y hace fetch al backend en localhost:8080.
 
 Si el backend no está corriendo, la tabla va a mostrar un mensaje de error de conexión.
 
