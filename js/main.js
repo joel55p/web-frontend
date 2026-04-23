@@ -17,7 +17,7 @@ async function recargarSeries() {
         renderSeries(series);
     } catch (err) {
         console.error('Error cargando series:', err);
-        document.getElementById('seriesGrid').innerHTML =
+        document.getElementById('seriesBody').innerHTML =
             '<p style="color:#c2185b;text-align:center;margin-top:40px">No se pudo conectar al backend. ¿Se esta  corriendo en localhost:8080?</p>';
     }
 }

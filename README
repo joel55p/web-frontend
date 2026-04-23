@@ -1,0 +1,87 @@
+Series Tracker — Frontend
+Cliente web en HTML, CSS y JavaScript vanilla puro. Sin frameworks ni librerías externas. Consume la API REST del backend mediante fetch() nativo.
+
+--------------Link al repo de Backend----------------
+https://github.com/joel55p/web-backend.git 
+
+
+
+-------------Link al Backend publicado en Railway-------------------------
+https://web-backend-production-1dfb.up.railway.app 
+
+
+---------Link al Frontend publicado en Vercel -------------------
+https://web-frontend-chi-five.vercel.app 
+
+
+-------Screenshot de Aplicacion funcionando----------------
+
+
+-----------¿Cómo correr el proyecto localmente?-------------------
+Requisitos
+
+-El backend corriendo en http://localhost:8080
+-VS Code con la extensión Live Server instalada
+
+Pasos
+1. git clone https://github.com/joel55p/web-frontend.git
+2. cd web-frontend
+3. Luego abre el proyecto en VS Code y haz click derecho en index.html y sale Open with Live Server.
+4. El frontend corre en http://localhost:5500 y hace fetch al backend en localhost:8080.
+
+Si el backend no está corriendo, la tabla va a mostrar un mensaje de error de conexión.
+
+
+
+-------------Estructura del proyecto----------------------------
+web-frontend/
+├── index.html        # Estructura HTML — tabla, modal, toolbar
+├── css/
+│   └── style.css     # Estilos — tema dark azul, tabla, modal, botones
+├── js/
+│   ├── api.js        # Toda la comunicación con el backend (fetch)
+│   ├── ui.js         # Manipulación del DOM, renderizado de filas y modal
+│   └── main.js       # Punto de entrada, event listeners, filtros activos
+├── img/
+│   ├── icon.png      # Favicon
+│   ├── image.png       # Screenshot de funcionamiento
+└── README.md
+
+
+--------------Challenges implementados-------------
+
+1. Búsqueda en tiempo real con ?q= enviado al backend
+2. Ordenamiento con ?sort= y ?order=
+3. Diseño visual dark blue — se ve como una app real
+4. Código organizado en archivos con responsabilidades claras (api.js / ui.js / main.js)
+
+
+
+
+---------------Reflexión---------------------------
+
+Para este proyecto lo  más interesante fue no poder usar ninguna librería ni axios, ni jQuery, ni ningún framework de UI. Todo con fetch() nativo y manipulando directamente el DOM.
+Lo que más aprendí fue cómo funciona fetch() en profundidad como  el manejo de promesas, por que hay que esperar tanto el fetch() como el .json(), como el navegador maneja CORS y por que el preflight OPTIONS existe.
+Ahora bien la separacion entre api.js, ui.js y main.js fue una decision que valia la pena ya que  en cualquier momento se puede  cambiar como se ve algo en ui.js sin tocar la logica de red en api.js, o cambiar la URL del backend en un solo lugar. Que basicmaente es el mismo principio de separacion de responsabilidades que aplica en proyectos mas grandes.
+¿Lo usaría de nuevo? JavaScript vanilla para proyectos pequeños si, ya que  es mas que suficiente. Pero  Para algo mas complejo con estado compartido entre muchos componentes, pues si seria mejor usar  React o algun framework.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
