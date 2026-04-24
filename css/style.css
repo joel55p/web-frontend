@@ -311,3 +311,40 @@ tr:hover td { background: var(--border-2); }
     cursor: pointer;
 }
 .btn-save:hover { background: var(--blue-mid); }
+
+
+/* ===== Paginacio ===== */
+#paginacionWrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 14px;
+    justify-content: flex-end;
+}
+
+.btn-page {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    padding: 6px 14px;
+    border-radius: var(--radius);
+    font-size: 13px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+.btn-page:hover:not(:disabled) {
+    border-color: var(--blue-mid);
+    color: var(--text);
+}
+.btn-page:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+.page-info {
+    font-size: 13px;
+    color: var(--text-muted);
+    min-width: 60px;
+    text-align: center;
+}
