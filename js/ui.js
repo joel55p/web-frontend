@@ -12,7 +12,9 @@ function renderSeries(series) {
     }
     emptyMsg.style.display = 'none';
 
-    series.forEach((serie, index) => tbody.appendChild(crearFila(serie, index + 1))); // por cada serie, crear una fila en la tabla con su informacion y botones de accion
+   // Despues:
+    const offset = (filtrosActivos.page - 1) * filtrosActivos.limit;
+    series.forEach((serie, index) => tbody.appendChild(crearFila(serie, offset + index + 1)));
 }
 
 function crearFila(serie, numero) {
